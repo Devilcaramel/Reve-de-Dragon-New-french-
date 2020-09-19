@@ -1,0 +1,1200 @@
+div.sheet-tab-content { display: none; }
+input.sheet-tab1:checked ~ div.sheet-tab1,
+input.sheet-tab2:checked ~ div.sheet-tab2,
+input.sheet-tab3:checked ~ div.sheet-tab3,
+input.sheet-tab4:checked ~ div.sheet-tab4,
+input.sheet-tab5:checked ~ div.sheet-tab5,
+input.sheet-tab6:checked ~ div.sheet-tab6,
+{
+    display: block;
+}
+input.sheet-secondary_tab1:checked ~ div.sheet-secondary_tab1,
+input.sheet-secondary_tab2:checked ~ div.sheet-secondary_tab2,
+input.sheet-secondary_tab3:checked ~ div.sheet-secondary_tab3,
+input.sheet-secondary_tab4:checked ~ div.sheet-secondary_tab4,
+input.sheet-secondary_tab5:checked ~ div.sheet-secondary_tab5,
+input.sheet-secondary_tab6:checked ~ div.sheet-secondary_tab6,
+{
+    display:block;
+}
+
+input.sheet-tab{
+    width:200px;
+    height: 40px;
+    top: 5px;
+    left: 6px;
+    margin: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+input.sheet-tab::before{
+    content: attr(title);
+
+    border-radius:.5em;
+    border:2px solid black;
+    text-align: center;
+    display: inline-block;
+    
+    background: black;
+    color:white;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+}
+input.sheet-tab:checked::before{
+    background:#CCCCCC;
+    color:black;
+    border-radius:.5em;
+    border:2px solid black;
+}
+.sheet-bulle{
+    border-radius:50%;
+    text-align:right;
+    font-weight:bolder;
+}
+
+.charsheet{
+
+    font-family:Comic Sans, Comic Sans MS, cursive;
+}
+.sheet-title{
+    display:inline-block;
+}
+.sheet-title-separate{
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    padding:30px;
+    font-style:oblique;
+    font-weight:bolder;
+    font-size:22px;
+    text-align:center;
+      text-transform:uppercase;
+}    
+.charsheet {
+    background-image: url();
+}
+.sheet-name{
+    margin-top : 33px;
+    margin-left : 100px;
+    height:35px;
+    width: 380px;
+    border:none;
+    font-size:30px;
+    font-weight:bolder;
+    font-style:oblique;
+    text-transform:capitalize;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    text-align:center;
+}
+
+/* Fatigue */
+
+table.sheet-fatigue_tableau {
+  border: 0px solid #fff;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+td.sheet-fatigue_colonne {
+  text-align: center;
+  width: 10%;
+}
+
+td.sheet-fatigue_segment {
+  border: 1px solid #eeeeee;
+  margin: 3px;
+  padding: 5px;
+  text-align: center;
+  width: 30%;
+}
+
+td.sheet-fatigue_statut {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sheet-rolltemplate-RDD table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-RDD th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-RDD td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-RDD .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+ 
+.sheet-rolltemplate-STRESS table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A9D0F5,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-STRESS th {
+    font-size:18px;
+    padding:8px;
+    font-style:normal;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-STRESS td {
+    padding:2px;
+    font-size:10px;
+    font-style:normal;
+    text-transform:uppercase;
+}
+ 
+.sheet-rolltemplate-STRESS .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 30%;
+}
+
+.sheet-rolltemplate-Encaissement table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-Encaissement th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-Encaissement td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-Encaissement .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-Encaissement2 table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-Encaissement2 th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-Encaissement2 td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-Encaissement2 .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-jetendu table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-jetendu th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-jetendu td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-jetendu .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-life table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-life th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-life td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-life .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-draconic table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-draconic th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-draconic td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-draconic .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-jetrefoul table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-jetrefoul th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-jetrefoul td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-jetrefoul .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-mal table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-mal th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-mal td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-mal .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-neutre table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-neutre th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-neutre td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-neutre .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-heureux table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-heureux th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-heureux td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-heureux .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-recuppv table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-recuppv th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-recuppv td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-recuppv .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-testgueri table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-testgueri th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-testgueri td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-testgueri .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+
+.sheet-rolltemplate-testmaladie table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-testmaladie th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-testmaladie td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-testmaladie .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-testvenin table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-testvenin th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-testvenin td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-testvenin .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-resistbouclier table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-resistbouclier th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-resistbouclier td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-resistbouclier .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-resistarme table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-resistarme th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-resistarme td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-resistarme .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-desarmement table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-desarmement th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-desarmement td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-desarmement .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-recul table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-recul th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-recul td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-recul .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-maladresse1 table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-maladresse1 th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-maladresse1 td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-maladresse1 .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+
+.sheet-rolltemplate-maladresse2 table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-maladresse2 th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-maladresse2 td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-maladresse2 .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-maladressecheat table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-maladressecheat th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-maladressecheat td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-maladressecheat .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-maladressecheat table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-maladressecheat th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-maladressecheat td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-maladressecheat .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-dederencontre table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-dederencontre  th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:20px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-dederencontre td {
+    padding:3px;
+    font-size:12px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-dederencontre  .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-cite table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-cite  th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:16px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-cite td {
+    padding:3px;
+    font-size:10px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-cite  .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-plaines table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-plaines  th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:16px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-plaines td {
+    padding:3px;
+    font-size:10px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-plaines  .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-foret table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-foret  th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:16px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-foret td {
+    padding:3px;
+    font-size:10px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-foret  .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-monts table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-monts  th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:16px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-monts td {
+    padding:3px;
+    font-size:10px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-monts  .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-lac table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-lac  th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:16px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-lac td {
+    padding:3px;
+    font-size:10px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-lac  .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-marais table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-marais  th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:16px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-marais td {
+    padding:3px;
+    font-size:10px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-marais  .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.sheet-rolltemplate-necro table {
+    border-collapse:separate;
+    border-spacing:0px ;
+    background-color:#A0A49E,
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #F6F4E6 60%, #C4C3B8 );
+    padding:10px;
+    margin:5px;
+    background-image: url("https://nsa40.casimages.com/img/2019/11/30/191130023326299881.jpg");
+}
+.sheet-rolltemplate-necro  th {
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:16px;
+    padding:10px;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+.sheet-rolltemplate-necro td {
+    padding:3px;
+    font-size:10px;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-style:oblique;
+    text-transform:uppercase;
+}
+
+.sheet-rolltemplate-necro  .inlinerollresult {
+    background-color: rgba(255,255,255,0.9);
+    border-width: 1px;
+    border-color: #BEAAA0;
+    border-style: solid;
+    border-radius: 50%;
+}
